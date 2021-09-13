@@ -9,5 +9,5 @@ Another way to drive AR956x network card on Catalina
 * This is a method released by the YouTuber a few years ago, and it just works, so share it again.<br>
 * You can also check out his Youtube, the link is here [@Anatolii Bondarenko](https://www.youtube.com/channel/UCzxRc20c5_bC2zaBFQ4GFsQ).<br>
 * Methods as below：
-  ** First, open a `terminal` and type `defaults write com.apple.finder AppleShowAllFiles YES` and press enter.
-  ** Second, type `killall Finder` and Press enter again.
+  * First, open a `terminal` and type `defaults write com.apple.finder AppleShowAllFiles YES` and press enter.
+  * Second, type `killall Finder` and Press enter again.
