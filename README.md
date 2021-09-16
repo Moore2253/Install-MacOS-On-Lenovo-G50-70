@@ -16,14 +16,21 @@
 * 独显卡：AMD redeon HD 8500M
 * 蓝牙：Qualcomm Atheros AR3012 Bluetooth 4.0
 * 硬盘：WDC WD5000LPCX-24C6HT0
-## 安装macOS（简略教程文字版）
+## 安装macOS（文字教程）
 ### 需要准备
 * 1，一个容量>16GB的u盘；
   * 尽量选择有品牌、传输稳定的u盘，不要选择杂牌，否则安装过程可能会卡住。
 * 2，一个黑苹果镜像；
   * 可以通过[`黑果小兵部落阁`](https://blog.daliansky.net/)及其微信公众号下载，其它下载镜像站点自行百度。
-* 3，一台电脑；
-  * 可以是装有Windows、Linux、macOS的任意一台电脑；
-  * 需要安装有[`balenaEtcher`](https://www.balena.io/etcher/)，全平台支持。
+* 3，一台联想G50-70电脑；
+  * Windows、Linux均可；
+  * 需要安装有[`balenaEtcher`](https://www.balena.io/etcher/)。
 ### 开始安装
-* 1，打开电脑上的`balenaEtcher`，点击......
+* 1，打开电脑上的`balenaEtcher`；
+* 2，点击`Flash from file`选择你下载的镜像`macOS Big Sur 11.5.2 20G95 Installer for OpenCore 0.7.1 and CLOVER 5138 and PE.dmg`（文件名类似）；
+* 3，点击`Select target`选择你要刷入的u盘；
+* 4，点击`Flash`开始刷写（会弹出`命令提示符`获取管理员权限，请点击`“是”`）；
+* 5，等待软件提示`Flash done`后，重启电脑
+* 6，在`Lenovo`logo并未开始转圈或进入其它引导界面时，按下Fn+F12（亮度+键）；
+* 7，你会发现有三个u盘启动项，它们分别是OC、CLOVER、PE的启动项。
+ *
