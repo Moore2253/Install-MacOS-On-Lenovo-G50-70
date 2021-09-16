@@ -33,4 +33,6 @@
 * 5，等待软件提示`Flash done`后，重启电脑
 * 6，在`Lenovo`logo并未开始转圈或进入其它引导界面时，按下Fn+F12（亮度+键）；
 * 7，你会发现有三个u盘启动项，它们分别是OC、CLOVER、PE的启动项。
- *
+  * 如果你想使用`OC`引导，你可能需要编辑`EFI/OC/config.plist`中的：
+    * Kernel- Quirks- AppleXcpmCfgLock
+    * UEFI- Quirks-IgnoreInvalidFlexRatio
