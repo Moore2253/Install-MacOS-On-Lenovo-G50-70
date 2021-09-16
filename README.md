@@ -25,3 +25,5 @@
 * 3，一台电脑；
   * 可以是装有Windows、Linux、macOS的任意一台电脑；
   * 需要安装有[`balenaEtcher`](https://www.balena.io/etcher/)，全平台支持。
+### 开始安装
+* 1，打开电脑上的`balenaEtcher`，点击......
