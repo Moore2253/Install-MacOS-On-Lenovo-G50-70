@@ -29,12 +29,19 @@
 * 1，打开电脑上的`balenaEtcher`；
 * 2，点击`Flash from file`选择你下载的镜像`macOS Big Sur 11.5.2 20G95 Installer for OpenCore 0.7.1 and CLOVER 5138 and PE.dmg`（文件名类似）；
 * 3，点击`Select target`选择你要刷入的u盘；
-* 4，点击`Flash`开始刷写（会弹出`命令提示符`获取管理员权限，请点击`“是”`）；
-* 5，等待软件提示`Flash done`后，重启电脑
+* 4，点击`Flash`开始刷写；
+  * 会弹出`命令提示符`获取管理员权限，请点击`“是”`。
+* 5，等待软件提示`Flash done`后，重启电脑；
 * 6，在`Lenovo`logo并未开始转圈或进入其它引导界面时，按下Fn+F12（亮度+键）；
-* 7，你会发现有三个u盘启动项，它们分别是OC、CLOVER、PE的启动项。
-  * 如果你想使用`OC`引导，可能会卡EB，所以你需要找到`EFI/OC/config.plist`的以下内容将`false`修改成`true`：
+* 7，你会发现有三个u盘启动项，它们分别是OC、CLOVER、PE的启动项；
+  * 如果你想使用`OC`引导，可能会卡EB，所以你需要找到`EFI/OC/config.plist`文件中的以下内容将`false`修改成`true`：
     * Kernel- Quirks- AppleXcpmCfgLock
     * UEFI- Quirks- IgnoreInvalidFlexRatio
-  * 但是我没有使用`OC`引导进行安装，请自行测试，我接下来教学`CLOVER`引导安装
-* 8，
+  * 但是我没有使用`OC`引导进行安装，请自行测试，我接下来教学`CLOVER`引导安装。
+* 8，选择u盘启动项第三个进入`PE`系统；
+* 9，打开桌面上的`DiskGenius`进行分区；
+  * 分区教程省略，不会请百度。
+  * 警告：在分区前请务必确认已备份/移动重要数据！
+  * 若已经分区，请跳过此步骤。
+* 10，按`开始菜单`键选择`重启`并重复`6`步骤；
+* 11，......
