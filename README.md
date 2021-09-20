@@ -33,7 +33,7 @@
   * 会弹出`命令提示符`获取管理员权限，请点击`“是”`。
 * 5，等待软件提示`Flash done`后，重启电脑；
 * 6，在`Lenovo`logo并未开始转圈或进入其它引导界面时，按下Fn+F12（亮度+键）；
-* 7，你会发现有三个u盘启动项，它们分别是OC、CLOVER、PE的启动项；
+* 7，你会发现有三个u盘启动项:`EFI USB Device`、`EFI USB Device1`、`EFI USB Device2`，它们分别是`OC`、`CLOVER`、`PE`；
   * 如果你想使用`OC`引导，可能会卡EB，所以你需要找到`EFI/OC/config.plist`文件中的以下内容将`false`修改成`true`：
     * Kernel- Quirks- AppleXcpmCfgLock
     * UEFI- Quirks- IgnoreInvalidFlexRatio
@@ -42,6 +42,12 @@
 * 9，打开桌面上的`DiskGenius`进行分区；
   * 分区教程省略，不会请百度。
   * 警告：在分区前请务必确认已备份/移动重要数据！
-  * 若已经分区，请跳过此步骤。
+  * 若已经分区，请跳过`8、9`步骤。
 * 10，按`开始菜单`键选择`重启`并重复`6`步骤；
-* 11，......
+* 11，选择u盘第二个启动项，进入`CLOVER`;
+* 12，选择`install macOS big Sur from ...`（整个名称忘了），按`Enter`键确认；
+* 13，等待跑码完成；
+* 14，进入界面，`语言/language`选择`简体中文`；
+  * 可能不会有该界面；
+  * 
+* 15，
