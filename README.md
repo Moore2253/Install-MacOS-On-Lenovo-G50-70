@@ -2,6 +2,7 @@
 ## 前言
 * 因为今年暑假闲着无聊，就翻出了家里这台闲置机器，刚好前几个月听说了黑苹果这个玩意，并且听说挺难整，决定试着安装。
 * 由于文件太乱，所以我决定将EFI都放在[`Releases`](https://github.com/Moore2253/Install-MacOS-On-Lenovo-G50-70/releases)里，所以源代码只有`README.md`这一个文件。
+* 本来想顺便写个文字安装教程，但我懒得继续写下去了，就算了吧。
 * Tips：因为我编辑这个`README.md`时已经开学，所以每天只能更新一点点，敬请谅解。
 ## 机型配置
 * 设备名：Lenovo G50-70 （20351）
@@ -16,38 +17,9 @@
 * 独显卡：AMD redeon HD 8500M
 * 蓝牙：Qualcomm Atheros AR3012 Bluetooth 4.0
 * 硬盘：WDC WD5000LPCX-24C6HT0
-## 安装macOS（文字教程）
-### 需要准备
-* 1，一个容量>16GB的u盘；
-  * 尽量选择有品牌、传输稳定的u盘，不要选择杂牌，否则安装过程可能会卡住。
-* 2，一个黑苹果镜像；
-  * 可以通过[`黑果小兵部落阁`](https://blog.daliansky.net/)及其微信公众号下载，其它下载镜像站点自行百度。
-* 3，一台联想G50-70电脑；
-  * Windows、Linux均可；
-  * 需要安装有[`balenaEtcher`](https://www.balena.io/etcher/)。
-### 开始安装
-* 1，打开电脑上的`balenaEtcher`；
-* 2，点击`Flash from file`选择你下载的镜像`macOS Big Sur 11.5.2 20G95 Installer for OpenCore 0.7.1 and CLOVER 5138 and PE.dmg`（文件名类似）；
-* 3，点击`Select target`选择你要刷入的u盘；
-* 4，点击`Flash`开始刷写；
-  * 会弹出`命令提示符`获取管理员权限，请点击`“是”`。
-* 5，等待软件提示`Flash done`后，重启电脑；
-* 6，在`Lenovo`logo并未开始转圈或进入其它引导界面时，按下Fn+F12（亮度+键）；
-* 7，你会发现有三个u盘启动项:`EFI USB Device`、`EFI USB Device1`、`EFI USB Device2`，它们分别是`OC`、`CLOVER`、`PE`；
-  * 如果你想使用`OC`引导，可能会卡EB，所以你需要找到`EFI/OC/config.plist`文件中的以下内容将`false`修改成`true`：
-    * Kernel- Quirks- AppleXcpmCfgLock
-    * UEFI- Quirks- IgnoreInvalidFlexRatio
-  * 但是我没有使用`OC`引导进行安装，请自行测试，我接下来教学`CLOVER`引导安装。
-* 8，选择u盘启动项第三个进入`PE`系统；
-* 9，打开桌面上的`DiskGenius`进行分区；
-  * 分区教程省略，不会请百度。
-  * 警告：在分区前请务必确认已备份/移动重要数据！
-  * 若已经分区，请跳过`8、9`步骤。
-* 10，按`开始菜单`键选择`重启`并重复`6`步骤；
-* 11，选择u盘第二个启动项，进入`CLOVER`;
-* 12，选择`install macOS big Sur from ...`（整个名称忘了），按`Enter`键确认；
-* 13，等待跑码完成；
-* 14，进入界面，`语言/language`选择`简体中文`；
-  * 可能不会有该界面；
-  * 
-* 15，
+## 引导
+* 目前我都使用`CLOVER`引导，最新版为`5139`，但我目前使用`5138`。
+## 驱动`kext`
+* 我目前使用的驱动为17个，均为最新版。`Releases`>`Downloadv1.0`中的三个efi的压缩中的`kexts`有二三十来个，我已经在陆续删除无用驱动，避免启动过慢、efi过于臃肿。
+### 已驱动的硬件以及其所需`kext`驱动
+* ...（下次更新）
