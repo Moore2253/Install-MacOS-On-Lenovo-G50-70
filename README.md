@@ -1,5 +1,5 @@
 # 在联想G50-70上安装macOS
-## 前言
+## 写在前面
 * 因为在家闲着无聊，就决定试着在这台老设备上安装macOS。
 * 由于文件太乱，所以我决定将EFI都放在[`Releases`](https://github.com/Moore2253/Install-MacOS-On-Lenovo-G50-70/releases)里，所以源代码只有`README.md`这一个文件。
 * 本来想顺便写个文字安装教程，但我懒得继续写下去了，就算了吧。
@@ -7,9 +7,9 @@
 * 设备名：Lenovo G50-70 （20351）
 * 处理器：Intel i5-4288u 双核 2.60Ghz
 * 运行内存：4GB 1600Mhz DDR3
-* 当前安装的Windows版本：Windows11 21h2 22000.258
+* 当前安装的Windows版本：Windows11 21H2 22000.318
 * 当前安装的macOS版本：macOS Big Sur 11.6.1
-* 当前使用的引导版本：
+* 当前使用的引导版本：OpenCore 076 开发版
 * 声卡：Conexant SmartAudio HD
 * 无线网卡：QualcommAtheros AR956x Wireless Network Adapter 
 * 有线网卡：Realtek PCIe GBE Family Controller (RTL8168)
@@ -25,7 +25,8 @@
 * 2021年7月 尝试更新Big Sur，但出现了一些问题，放弃更新继续优化Clover。
 * 2021年6月 配置有了一些进展，网络、声音、显示等基本正常，升级到Catalina，日用基本OK。
 * 2021年5月 首次接触macOS Mojave和Clover，对其进行配置。
-## kext驱动
-* 我目前使用OpenCore引导的驱动为18个，均为最新版。
-### 使用驱动的硬件以及其所需`kext`驱动
-* ...（下次更新）
+## ACPI补丁和重命名
+* 非常感谢`@mirifi2k`的`OpenCore`efi，让我可以从`Clover`引导换成`OpenCore`引导，他的efi中的所有acpi补丁和重命名在我的电脑上基本完美驱动，所以此处省略，详情看上方指出的文章。
+## 已经驱动的硬件
+* 我目前使用OpenCore引导的`kext`驱动为18个，均为最新版。
+*  
