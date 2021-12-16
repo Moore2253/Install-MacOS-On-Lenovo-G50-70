@@ -11,7 +11,7 @@
 * 当前安装的macOS版本：macOS Big Sur 11.6.1
 * 当前使用的引导版本：OpenCore 076 开发版
 * 声卡：Conexant SmartAudio HD
-* 无线网卡：QualcommAtheros AR956x Wireless Network Adapter 
+* 无线网卡：Qualcomm Atheros AR956x Wireless Network Adapter 
 * 有线网卡：Realtek PCIe GBE Family Controller (RTL8168)
 * 核显卡：Intel Iris Graphics 5100 1536MB
 * 独显卡：AMD redeon HD 8500M / R5 M230
